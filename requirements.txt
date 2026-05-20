@@ -1,0 +1,23 @@
+# Python 3.10
+clip @ git+https://github.com/openai/CLIP.git
+compressai
+einops
+lpips
+matplotlib
+numpy
+opencv-python
+open_clip_torch
+pandas
+Pillow
+ptflops
+pytorch-msssim
+PyYAML
+scipy
+sympy
+thop
+timm
+torch
+torch-geometric
+torchvision
+tqdm
+transformers
