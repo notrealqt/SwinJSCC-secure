@@ -4,29 +4,17 @@
 
 This repository contains the implementation of the paper "Secure Semantic Communications with Adversarial Training and Active Eavesdropper".
 
+## System Model
+
+![System Model](images/system_model.png)
+
 ## Getting Started
 
 ### Requirements
 
-- Python 3.8 or later
-- PyTorch
-- NumPy
-- tqdm
-- matplotlib
-- scikit-learn
-- scikit-image
-
 Install requirements with:
 
 ```bash
-pip install -r requirements.txt
-```
-
-### Recommended Setup
-
-```bash
-python -m venv venv
-venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -82,19 +70,23 @@ Include evaluation results, plots, and tables such as:
 
 ## Citation
 
-If you use this codebase, please cite the paper:
+If you use this codebase, please cite these papers:
 
 ```bibtex
-@INPROCEEDINGS{yourpaper2026,
-  author={Your Name and Coauthor Name},
-  booktitle={Conference Name 2026},
-  title={Secure Semantic Communications with Adversarial Training and Active Eavesdropper},
-  year={2026},
-  pages={xxx--xxx},
-  doi={10.XXXX/XXXXX}
+@ARTICLE{10589474,
+  author={Yang, Ke and Wang, Sixian and Dai, Jincheng and Qin, Xiaoqi and Niu, Kai and Zhang, Ping},
+  journal={IEEE Transactions on Cognitive Communications and Networking}, 
+  title={SwinJSCC: Taming Swin Transformer for Deep Joint Source-Channel Coding}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Transformers;Adaptation models;Signal to noise ratio;Convolutional neural networks;Wireless communication;Vectors;Image coding;Joint source-channel coding;Swin Transformer;attention mechanism;image communications},
+  doi={10.1109/TCCN.2024.3424842}
 }
 ```
 
-## License
+## Acknowledgement
 
-This project is released under the MIT License. See `LICENSE` for details.
+This implementation is built upon and inspired by the [SwinJSCC](https://github.com/semcomm/SwinJSCC) framework.  
+We sincerely thank the authors of SwinJSCC for making their code publicly available and supporting open research in semantic communications.
