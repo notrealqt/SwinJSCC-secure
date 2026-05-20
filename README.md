@@ -6,7 +6,7 @@ This repository contains the implementation of the paper "Secure Semantic Commun
 
 ## System Model
 
-![System Model](images/system_model.png)
+![System Model](images/system-model.jpg)
 
 ## Getting Started
 
@@ -19,58 +19,16 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+>If you want to train the model, please add '--enable-adversarial', '--enable-an'.
 
-### 1. Prepare Data
-
-Download and preprocess the dataset used in the paper. Example:
-
-```bash
-python scripts/download_data.py --dataset <dataset_name> --output-dir data/
-python scripts/preprocess_data.py --input-dir data/raw --output-dir data/processed
+>If you want to test the model, please add '--adv-eval', '--enable-an', '--model-path'. 
 ```
-
-### 2. Train the Secure Semantic System
-
-```bash
-python train.py --config configs/secure_jscc.yaml
+python main.py --training --trainset {CIFAR10/DIV2K} --testset {CIFAR10/kodak/CLIC21} -- distortion-metric {MSE/MS-SSIM} --model {'SwinJSCC_w/o_SAandRA'/'SwinJSCC_w/_SA'/'SwinJSCC_w/_RA'/'SwinJSCC_w/_SAandRA'} --channel-type {awgn/rayleigh} --C {bottleneck dimension} --multiple-snr {random or fixed snr} --model_size {SwinJSCC model size}
 ```
-
-This should train:
-
-- the semantic encoder/decoder pair
-- the active eavesdropper network
-- the adversarial training loop for confidentiality
-
-### 3. Evaluate Performance
-
-```bash
-python evaluate.py --checkpoint checkpoints/best_model.pth --config configs/eval.yaml
-```
-
-Expected outputs include:
-
-- semantic reconstruction metrics
-- bit-level or perceptual quality metrics
-- eavesdropper reconstruction accuracy
-- secrecy performance curves
-
-### 4. Run Active Eavesdropper Attack
-
-```bash
-python attack.py --checkpoint checkpoints/best_model.pth --attack-mode active
-```
-
-## Results
-
-Include evaluation results, plots, and tables such as:
-
-- semantic accuracy vs. SNR
-- legitimate receiver quality vs. eavesdropper error
-- robustness under active attack
 
 ## Citation
 
-If you use this codebase, please cite these papers:
+If you find this work useful for your research, please cite:
 
 ```bibtex
 @ARTICLE{10589474,
@@ -78,8 +36,6 @@ If you use this codebase, please cite these papers:
   journal={IEEE Transactions on Cognitive Communications and Networking}, 
   title={SwinJSCC: Taming Swin Transformer for Deep Joint Source-Channel Coding}, 
   year={2024},
-  volume={},
-  number={},
   pages={1-1},
   keywords={Transformers;Adaptation models;Signal to noise ratio;Convolutional neural networks;Wireless communication;Vectors;Image coding;Joint source-channel coding;Swin Transformer;attention mechanism;image communications},
   doi={10.1109/TCCN.2024.3424842}
