@@ -29,17 +29,7 @@ python main.py --training --trainset {CIFAR10/DIV2K} --testset {CIFAR10/kodak/CL
 ## Citation
 
 If you find this work useful for your research, please cite:
-
-```bibtex
-@ARTICLE{10589474,
-  author={Yang, Ke and Wang, Sixian and Dai, Jincheng and Qin, Xiaoqi and Niu, Kai and Zhang, Ping},
-  journal={IEEE Transactions on Cognitive Communications and Networking}, 
-  title={SwinJSCC: Taming Swin Transformer for Deep Joint Source-Channel Coding}, 
-  year={2024},
-  pages={1-1},
-  keywords={Transformers;Adaptation models;Signal to noise ratio;Convolutional neural networks;Wireless communication;Vectors;Image coding;Joint source-channel coding;Swin Transformer;attention mechanism;image communications},
-  doi={10.1109/TCCN.2024.3424842}
-}
+https://doi.org/10.1007/978-981-92-0074-0_32
 ```
 
 ## Acknowledgement
