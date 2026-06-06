@@ -30,7 +30,6 @@ python main.py --training --trainset {CIFAR10/DIV2K} --testset {CIFAR10/kodak/CL
 
 If you find this work useful for your research, please cite:
 https://doi.org/10.1007/978-981-92-0074-0_32
-```
 
 ## Acknowledgement
 
