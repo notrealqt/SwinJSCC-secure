@@ -29,7 +29,17 @@ python main.py --training --trainset {CIFAR10/DIV2K} --testset {CIFAR10/kodak/CL
 ## Citation
 
 If you find this work useful for your research, please cite:
-https://doi.org/10.1007/978-981-92-0074-0_32
+
+```bibtex
+@inproceedings{thai2026secure,
+  title={Secure Semantic Communications with Adversarial Training and Active Eavesdropper},
+  author={Thai, Quang-Tinh and Nguyen, Toan-Van and Nguyen, Trung-Nghia and Kieu, Tung and Luu Vo, Phuong},
+  booktitle={Asian Conference on Intelligent Information and Database Systems},
+  pages={460--474},
+  year={2026},
+  organization={Springer}
+}
+```
 
 ## Acknowledgement
 
